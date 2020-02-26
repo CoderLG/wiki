@@ -13,6 +13,14 @@ yum repolist
 yum update
 ```
 
+**java**
+
+```
+yum remove java*
+yum list java*
+yum install java-1.8.0-openjdk-devel.x86_64 
+```
+
 
 
 **rz sz**
