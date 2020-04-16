@@ -6,6 +6,16 @@ docker exec -it 9a8b3a04a2ac /bin/bash
 docker ps
 docker inspect  9a8b3a04a2ac
 
+映射docker中的端口
+docker service ls
+docker service update --publish-add 7610:7610 fefa99274c31
+
+删掉映射端口
+docker service update --publish-rm 7610:7610 icenter_eurekaserver
+
+查看环境变量
+docker exec 2992c1591a68 env
+
 ```
 
 
